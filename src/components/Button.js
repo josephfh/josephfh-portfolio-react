@@ -5,7 +5,7 @@ class Button extends React.Component {
     const classes = "block border p-4 w-24";
     return (
       <button
-        className={this.props.active ? `${classes} border-red-300` : `${classes}`}
+        className={this.props.isActive ? `${classes} border-red-300` : `${classes}`}
         onClick={this.props.onClick}
       >
         {this.props.label}
