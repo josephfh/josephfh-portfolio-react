@@ -1,4 +1,4 @@
-An introductory website made for Joseph Hughes, a frontend/fullstack web developer.
+An introductory website made by Joseph Hughes, frontend/fullstack web developer.
 
 * ReactJS
 * TailwindCSS
