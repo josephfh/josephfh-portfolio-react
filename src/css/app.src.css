@@ -32,11 +32,11 @@ body {
 }
 
 .c-content {
-  @apply relative z-20;
+  @apply overflow-x-hidden relative z-20;
 }
 
 .c-header {
-  @apply opacity-slight;
+  @apply opacity-slight overflow-x-hidden;
 }
 
 .title {
