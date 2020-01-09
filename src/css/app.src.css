@@ -11,6 +11,10 @@ body {
   animation: AnimationName 30s ease infinite;
 }
 
+.App {
+  @apply overflow-x-hidden;
+}
+
 .c-button {
   @apply block border-transparent border-0 p-2;
 }
@@ -32,11 +36,11 @@ body {
 }
 
 .c-content {
-  @apply overflow-x-hidden relative z-20;
+  @apply relative z-20;
 }
 
 .c-header {
-  @apply opacity-slight overflow-x-hidden;
+  @apply opacity-slight;
 }
 
 .title {
