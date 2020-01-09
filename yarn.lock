@@ -9246,6 +9246,13 @@ react-external-link@^1.1.1:
   resolved "https://registry.yarnpkg.com/react-external-link/-/react-external-link-1.1.1.tgz#1caaa0f359d4a04b3052d98b67410c7877fe2f3d"
   integrity sha512-e2WnTWkg81cuqxmDfjOalliAE20+Y/uD+lserN4uuwkwu+ciGLB3BMz4m7GnXh2+TowIi4sLtCL7zr7aDnIaqA==
 
+react-google-font-loader@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-google-font-loader/-/react-google-font-loader-1.1.0.tgz#9c9ae97aae3d2177e922c9bf4ab6312b903abc79"
+  integrity sha512-mnPYxBdhYEldTtREYPKllbmMvCGkTbpdmNjR6iTM3eTNWcg17OrfXjq9HRDZe+1+mhnUnI/AOcpvG0LIQPcLIw==
+  dependencies:
+    prop-types "^15.6.2"
+
 react-i18next@^11.2.7:
   version "11.2.7"
   resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-11.2.7.tgz#d0dd61ae6127589e316c6293fc948fe413c63580"

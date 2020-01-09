@@ -29,9 +29,9 @@ i18n.use(initReactI18next).init({
         sv: "Svenska",
         "frontend-developer": "Frontend Utvecklare",
         about:
-          "Hej! Jag ar en frontend utvecklare nu bor i Stockholm efter flyttade från London. Sedan 2001 har jag byggt webbplatser. Jag jobba med modern JavaScript, Vue.js, nyligen React. Jag har jobbat mycket med Wordpress och Drupal. (Antar jag du kan läs jag kan inte tala eller skriva så bra in Svenska, men jag lär mig det här året. Jag rör Google Translate bara lite, jag svär!)",
+          "Hej! Jag är en frontend utvecklare nu bor i Stockholm efter flyttade från London. Sedan 2001 har jag byggt webbplatser. Jag jobba med modern JavaScript, Vue.js, nyligen React, och mer. Jag har jobbat mycket med Wordpress och Drupal. (Antar jag, du kan läs jag kan inte tala eller skriva så bra in Svenska, men jag lär mig det här året. Jag rör Google Translate bara lite, jag svär!)",
         "more-info":
-          "Om vill du mer information, kolla min LinkedIn eller komma i kontakt.",
+          "Kolla in min LinkedIn eller hör av dig om du vill ha mer information.",
       },
     },
   },

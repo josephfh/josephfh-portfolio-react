@@ -1,13 +1,9 @@
-import React from "react";
-import {ExternalLink} from "react-external-link";
-import PropTypes from "prop-types";
-import {withTranslation} from "react-i18next";
-import InlineSVG from "svg-inline-react";
 import "./app.css";
-import logo from "./logo.svg";
+import {withTranslation} from "react-i18next";
 import Button from "./components/Button";
-import Router from "./components/Router";
-import Slider from "./components/Slider";
+import GoogleFontLoader from "react-google-font-loader";
+import PropTypes from "prop-types";
+import React from "react";
 
 class App extends React.Component {
   state = {
@@ -18,98 +14,93 @@ class App extends React.Component {
     match: PropTypes.object,
   };
 
-  icons = require("material-design-icons-svg")({
-    emoticon: require("material-design-icons-svg/paths/emoticon-neutral"),
-    menu: require("material-design-icons-svg/paths/menu"),
-  });
-
-  svgEmoticon = this.icons.getSVG("emoticon");
-
-  emojiStyle = {
-    filter: "brightness(0.83) contrast(16) saturate(0)",
-    textShadow: "0px 3px black",
-  };
-
   changeLanguage = (i18n, lng) => {
     i18n.changeLanguage(lng);
     document.activeElement.blur();
   };
 
-  setInterestLevel = interestLevel => {
-    console.log(interestLevel);
-    this.setState({interestLevel});
-  };
-
-  faces = [
-    {
-      emoji: "😒",
-      label: "ZZZ face",
-    },
-    {
-      emoji: "🙂",
-      label: "ZZZ face",
-    },
-    {
-      emoji: "🤨",
-      label: "ZZZ face",
-    },
-    {
-      emoji: "🤔",
-      label: "ZZZ face",
-    },
-    {
-      emoji: "🧐",
-      label: "ZZZ face",
-    },
-  ];
-
   render() {
     const {t, i18n} = this.props;
     return (
       <div className="App">
-        <h1 class="leading-loose mx-auto text-5xl uppercase">Joseph Hughes</h1>
-        <h2 class="leading-loose mx-auto text-3xl uppercase">
-          {t("frontend-developer")}
-        </h2>
-        <img src={logo} className="h-24 w-24" alt="logo" />
-        <div className="top-0 fixed left-0 w-full">
+        <header
+          className={
+            "c-header pt-16" +
+            (i18n.languages[0] === "sv" ? " c-header--right" : " c-header--left")
+          }
+        >
+          <h1 className="title">
+            <span className="sm:block">Joseph</span>{" "}
+            <span className="sm:block">Hughes</span>
+          </h1>
+          <h2 className="subtitle">{t("frontend-developer")}</h2>
+        </header>
+        <div
+          className={
+            "c-content" +
+            (i18n.languages[0] === "sv" ? " c-content--left" : " c-content--right")
+          }
+        >
+          <div className="sm:flex sm:flex-col sm:justify-center sm:align-middle sm:h-screen sm:mt-12 px-8 sm:px-0 sm:max-w-lg">
+            <div className="mb-4">{t("about")}</div>
+            <div className="mb-4">{t("more-info")}</div>
+            <div className="flex mb-4 pt-2 justify-center sm:justify-start">
+              <h3 className="hidden">Links</h3>
+              <Button
+                classes="c-button--vivid mx-2 sm:mx-0 sm:mr-4"
+                label="LinkedIn"
+                href="https://www.linkedin.com/in/josephfitzhughes"
+                aria-label="Joseph's LinkedIn profile"
+              />
+              <Button
+                classes="c-button--vivid mx-2 sm:mx-0 sm:mr-4"
+                label="GitHub"
+                href="https://github.com/josephfh"
+                aria-label="Joseph's Github"
+              />
+              <Button
+                classes="c-button--vivid mx-2 sm:mx-0"
+                label="Email"
+                href="mailto:josephhughes@gmail.com"
+                aria-label="Send an email"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className={
+            "c-bg " + (i18n.languages[0] === "sv" ? " c-bg--left" : " c-bg--right")
+          }
+        />
+        <div className="top-0 sm:top-auto sm:bottom-0 fixed left-0 w-full z-30">
           <div className="align-middle flex justify-center">
-            <h3 class="hidden">{t("change")}</h3>
+            <h3 className="hidden">{t("change")}</h3>
             <Button
-              onClick={() => this.changeLanguage(i18n, "en")}
-              label={t("en")}
+              classes="c-button--nav mr-1"
               isActive={i18n.languages[0] === "en"}
+              label={t("en")}
+              onClick={() => this.changeLanguage(i18n, "en")}
             />
             <Button
-              onClick={() => this.changeLanguage(i18n, "sv")}
-              label={t("sv")}
+              classes="c-button--nav ml-1"
               isActive={i18n.languages[0] === "sv"}
+              label={t("sv")}
+              onClick={() => this.changeLanguage(i18n, "sv")}
             />
           </div>
         </div>
-        <Slider
-          interestLevel={this.state.interestLevel}
-          setInterestLevel={this.setInterestLevel}
+        <GoogleFontLoader
+          fonts={[
+            {
+              font: "Roboto",
+              weights: [900],
+            },
+            {
+              font: "Roboto Mono",
+              weights: [400],
+            },
+          ]}
         />
-        <ExternalLink
-          href="https://www.linkedin.com/in/josephfitzhughes"
-          aria-label="Joseph's LinkedIn profile"
-        >
-          <span>LinkedIn</span>
-        </ExternalLink>
-        <ExternalLink href="mailto:josephhughes@gmail.com" aria-label="Send an email">
-          <span>Email</span>
-        </ExternalLink>
-        <ExternalLink href="https://github.com/josephfh" aria-label="Joseph's Github">
-          <span>GitHub</span>
-        </ExternalLink>
-        <div>{t("about")}</div>
-        <div>{t("more-info")}</div>
-        <div className="text-5xl" style={this.emojiStyle}>
-          <span role="img" aria-label={this.faces[this.state.interestLevel].label}>
-            {this.faces[this.state.interestLevel].emoji}
-          </span>
-        </div>
       </div>
     );
   }

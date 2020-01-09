@@ -1,3 +1,174 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply font-body h-screen overflow-x-hidden;
+  background: linear-gradient(270deg, #34f3c1, #f35b34);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+
+.c-button {
+  @apply block border-transparent border-0 p-2;
+}
+
+.c-button:hover {
+  @apply text-white;
+}
+
+.c-button--active {
+  @apply border-white;
+}
+
+.c-button--vivid {
+  @apply border border-black;
+}
+
+.c-button--vivid:hover {
+  @apply bg-black;
+}
+
+.c-content {
+  @apply relative z-20;
+}
+
+.c-header {
+  @apply opacity-slight;
+}
+
+.title {
+  @apply font-black font-display leading-none text-white tracking-widest uppercase;
+  font-size: 8em;
+  span {
+    @apply block;
+  }
+}
+
+.subtitle {
+  @apply font-black font-display leading-none text-white tracking-widest uppercase;
+  font-size: 5em;
+}
+
+@media (max-width: 639px) {
+  /* sm */
+  .c-bg {
+    @apply bg-white bottom-0 fixed opacity-medium z-10;
+    height: 100vw;
+    transform: translateY(71%) rotate(45deg);
+    width: 100vw;
+  }
+
+  .c-button--nav {
+    @apply border-t-2;
+  }
+
+  .c-content {
+    @apply pb-64 pt-20;
+  }
+
+  .c-header {
+    @apply overflow-hidden;
+    font-size: 2vw;
+  }
+
+  .c-header--left {
+    transform: translateX(3.1rem) rotate(-45deg) scale(0.75);
+  }
+
+  .c-header--right {
+    @apply text-right;
+    transform: translateX(-3.1rem) rotate(45deg) scale(0.75);
+  }
+}
+
+@media (min-width: 640px) {
+  /* sm */
+  .c-bg {
+    @apply bg-white fixed opacity-medium top-0 z-10;
+    height: 100vh;
+    width: 50vw;
+  }
+
+  .c-bg--left {
+    transform: translateY(1rem) rotate(45deg) scale(0.95);
+  }
+
+  .c-bg--right {
+    @apply right-0;
+    transform: translateY(-1rem) rotate(-45deg) scale(0.95);
+  }
+
+  .c-button--nav {
+    @apply border-b-2;
+  }
+
+  .c-content {
+    @apply top-0 h-screen fixed;
+    width: 50vw;
+  }
+
+  .c-content--left {
+    transform: translateX(8vw);
+  }
+
+  .c-content--right {
+    @apply right-0;
+    transform: translateX(-2vw);
+  }
+
+  .c-header {
+    @apply top-0 h-screen fixed;
+    font-size: 1.66vw;
+    width: 50vw;
+  }
+
+  .c-header--left {
+    transform: rotate(-45deg) scale(0.95) translateX(2vw) translateY(2vh);
+  }
+
+  .c-header--right {
+    @apply right-0;
+    transform: rotate(45deg) scale(0.95) translateX(-10vw) translateY(6vh);
+  }
+
+  .main {
+    @apply h-screen overflow-hidden;
+  }
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
