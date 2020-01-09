@@ -1,5 +1,9 @@
-A website made by Joseph Hughes, frontend web developer. Have I finished it yet? No.
+A website made by Joseph Hughes, a frontend web developer in Stockholm.
 
-* ReactJS
+* React
 * TailwindCSS
 * PostCSS
+
+_Almost_ perfect Lighthouse scores, but then it is only a single page!
+
+Static HTML is currently copied/pasted into ```index.html``` until I'm happy with a SSR solution in React. 
