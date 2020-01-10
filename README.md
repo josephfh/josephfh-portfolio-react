@@ -4,6 +4,6 @@ A website made by Joseph Hughes, a frontend web developer in Stockholm.
 * TailwindCSS
 * PostCSS
 
-_Almost_ perfect Lighthouse scores, but then it is only a single page!
+_Almost_ perfect Lighthouse scores, as a single page app should.
 
 Static HTML is currently copied/pasted into ```index.html``` until I'm happy with a SSR solution in React. 
