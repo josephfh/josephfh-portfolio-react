@@ -151,11 +151,16 @@ body {
   }
 
   .title {
-    transform: translateX(5rem);
+    transform: translateX(3rem);
   }
 
   .subtitle {
-    transform: translateX(-5rem);
+    transform: translateX(-3rem);
+  }
+
+  .header-appear-done .title,
+  .header-appear-done .subtitle {
+    transform: translateX(0);
   }
 }
 
