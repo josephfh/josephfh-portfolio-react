@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @todo - move this to scss */
+
 body {
   @apply font-body h-screen overflow-x-hidden;
   background: linear-gradient(270deg, #34f3c1, #f35b34);
@@ -46,14 +48,20 @@ body {
 .title {
   @apply font-black font-display leading-none text-white tracking-widest uppercase;
   font-size: 8em;
-  span {
-    @apply block;
-  }
+  transform: none;
+  transition: transform 600ms ease-in-out 0ms;
 }
 
 .subtitle {
   @apply font-black font-display leading-none text-white tracking-widest uppercase;
   font-size: 5em;
+  transform: none;
+  transition: transform 600ms ease-in-out 0ms;
+}
+
+.header-appear-done .title,
+.header-appear-done .subtitle {
+  transform: translateX(0);
 }
 
 @media (max-width: 639px) {
@@ -140,6 +148,14 @@ body {
 
   .main {
     @apply h-screen overflow-hidden;
+  }
+
+  .title {
+    transform: translateX(5rem);
+  }
+
+  .subtitle {
+    transform: translateX(-5rem);
   }
 }
 

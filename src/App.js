@@ -1,14 +1,26 @@
 import "./app.css";
 import {withTranslation} from "react-i18next";
 import Button from "./components/Button";
+import Header from "./components/Header";
 import GoogleFontLoader from "react-google-font-loader";
 import PropTypes from "prop-types";
 import React from "react";
 
 class App extends React.Component {
-  state = {
-    interestLevel: 1,
-  };
+  // state = {
+  //   mounted: false,
+  // };
+
+  // componentDidMount() {
+  //   setTimeout(this.setState({mounted: true}), 2000);
+  // }
+
+  // useEffect(() => {
+  //   setTimeout(this.setState({mounted: true}), 2000);
+  // // }, [])
+  // useEffect() {
+  //   this.setState({mounted: true});
+  // }
 
   static propTypes = {
     match: PropTypes.object,
@@ -22,19 +34,8 @@ class App extends React.Component {
   render() {
     const {t, i18n} = this.props;
     return (
-      <div className="App">
-        <header
-          className={
-            "c-header pt-16" +
-            (i18n.languages[0] === "sv" ? " c-header--right" : " c-header--left")
-          }
-        >
-          <h1 className="title">
-            <span className="sm:block">Joseph</span>{" "}
-            <span className="sm:block">Hughes</span>
-          </h1>
-          <h2 className="subtitle">{t("frontend-developer")}</h2>
-        </header>
+      <div>
+        <Header lang={i18n.languages[0]} subtitle={t("frontend-developer")} />
         <div
           className={
             "c-content" +
