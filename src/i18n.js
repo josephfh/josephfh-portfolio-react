@@ -18,7 +18,7 @@ i18n.use(initReactI18next).init({
         sv: "Swedish",
         "frontend-developer": "Frontend Developer",
         about:
-          "Hello! I'm Joseph Hughes, a frontend developer living in Stockholm. I have been building websites since the early 2000s, and now specialise in modern JavaScript, using Vue.js and more recently React. I've worked extensively with Wordpress and Drupal, headless apps and many APIs, GraphQL. I know basic Swedish, and just like development, try to learn a little bit more everyday.",
+          "Hello! I'm Joseph Hughes, a frontend developer living in Stockholm. I have been building websites since the early 2000s, and now specialise in modern JavaScript, using Vue.js and more recently React. I've worked extensively with Wordpress and Drupal, headless apps, APIs and GraphQL. I know basic Swedish, just as with web development, try to learn something new everyday.",
         "more-info":
           "Take a look at my LinkedIn to see who I have worked with, and feel free to get in touch.",
       },
