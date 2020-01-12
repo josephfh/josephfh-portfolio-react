@@ -30,7 +30,7 @@ i18n.use(initReactI18next).init({
         sv: "Svenska",
         "frontend-developer": "Frontend Utvecklare",
         about:
-          "Hej! Jag heter Joseph Hughes och är en frontend-utvecklare som bor i Stockholm efter att ha flyttat från London. Sedan 2001 har jag byggt webbsidor. Idag använder jag modern JavaScript, Vue.js, PWAs samt, på senaste tiden, React. Jag har också en lång bakgrund inom Wordpress och Drupal. (Jag är inte 100% flytande i tal eller skrift på svenska, men ska lära mig i år. Jag använder bara Google Translate lite, I promise!)",
+          "Hej! Jag heter Joseph Hughes och är en frontend-utvecklare som bor i Stockholm efter att ha flyttat från London. Sedan 2001 har jag byggt webbsidor. Idag använder jag modern JavaScript, Vue.js, PWAs och, på senaste tiden, React. Jag har även lång erfarenhet av Wordpress och Drupal. (Jag är inte 100% flytande i tal eller skrift på svenska, men ska lära mig i år. Jag använder bara Google Translate lite, I promise!)",
         "more-info":
           "Kolla in min LinkedIn för att läsa mer om min erfarenhet, och hör av dig om du undrar något.",
       },
