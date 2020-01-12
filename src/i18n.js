@@ -18,7 +18,7 @@ i18n.use(initReactI18next).init({
         sv: "Swedish",
         "frontend-developer": "Frontend Developer",
         about:
-          "Hello! I'm Joseph Hughes, a frontend developer living in Stockholm. I have been building websites since the early 2000s, and now specialise in modern JavaScript, using Vue.js and more recently React. I've worked extensively with Wordpress and Drupal, headless apps, APIs and GraphQL. I know basic Swedish, just as with web development, try to learn something new everyday.",
+          "Hello! I'm Joseph Hughes, a frontend developer living in Stockholm. I have been building websites since the early 2000s, and now specialise in modern JavaScript, using Vue.js and more recently React. I've worked a lot with Wordpress and Drupal, headless apps, APIs and GraphQL. I know basic Swedish, just as with web development, try to learn something new everyday.",
         "more-info":
           "Take a look at my LinkedIn to see who I have worked with, and feel free to get in touch.",
       },
@@ -30,9 +30,9 @@ i18n.use(initReactI18next).init({
         sv: "Svenska",
         "frontend-developer": "Frontend Utvecklare",
         about:
-          "Hej! Jag är Joseph Hughes, en frontend-utvecklare nu bor i Stockholm efter flyttade från London. Sedan 2001 har jag byggt webbplatser. Jag jobba med modern JavaScript, Vue.js, PWAs, och nyligen React. Och mer också... främst Wordpress och Drupal. (Antar jag, du kan läs jag kan inte tala eller skriva så bra in Svenska, men jag lär mig det här året. Jag rör Google Translate bara lite, jag svär!)",
+          "Hej! Jag heter Joseph Hughes och är en frontend-utvecklare som bor i Stockholm efter att ha flyttat från London. Sedan 2001 har jag byggt webbsidor, nu med modern JavaScript, Vue.js, PWAs och, på senaste tiden, React. I övrigt... mest Wordpress och Drupal. (Jag är inte 100% flytande i tal eller skrift på svenska, men ska lära mig i år. Jag använder bara Google Translate lite, I promise!)",
         "more-info":
-          "Kolla in min LinkedIn att se min erfarenhet, och hör av dig om du vill ha mer information.",
+          "Kolla in min LinkedIn för att läsa mer om min erfarenhet, och hör av dig om du undrar något.",
       },
     },
   },
